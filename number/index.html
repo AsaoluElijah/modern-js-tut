@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="" id="fnum">%
+    <br> of
+    <input type="number" name="" id="snum"> =
+    <button onclick="findPercent()">Calculate</button>
+    <div id="output"></div>
+
+    <script>
+        function findPercent() {
+            let output;
+            let fNum = document.getElementById('fnum').value;
+            let sNum = document.getElementById('snum').value;
+            if (fNum > sNum) {
+                output = "Number to large"
+            } else {
+                output = (sNum / 100) * fNum;
+            }
+            document.getElementById('output').innerHTML = output
+        }
+        let number = 12.56;
+        let number2 = -12.56;
+        // Pi
+        let pi = Math.PI;
+        console.log("The value of pi is: " + pi);
+
+        // Round Up
+        let output = Math.round(number);
+
+        // Square root
+        output = Math.sqrt(144); // 12
+
+        // Abstract number
+        output = Math.abs(number2)
+
+        // Power
+        output = Math.pow(4, 2);
+
+        // Minimum number from a list
+        output = Math.min(12, 3, 4, 34, 3123, -2)
+
+        // Maximum number from a list
+        output = Math.max(12, 3, 4, 34, 3123, -2)
+
+        console.log(output);
+    </script>
+</body>
+
+</html>
