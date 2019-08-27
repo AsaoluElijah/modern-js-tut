@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STRING METHODS</title>
+</head>
+
+<body>
+    <script>
+        // String Concatenation
+        let name = "Asaolu";
+        name = name.concat("-", "Elijah")
+        console.log(name);
+
+        //
+        let a = "How are you";
+        let email = "asaoluelijah7@gmail.com";
+        console.log("String: " + a);
+        // To upper case - Method
+        console.log(("To upper case: " + a.toLocaleUpperCase()));
+        // To lower case - Method
+        console.log(("To lower case: " + a.toLowerCase()));
+        // String length - property
+        console.log("String length: " + a.length);
+        // check where a character is located in a string
+        // alternative to indexOf is includes
+        // e.g: email.includes('@')
+        console.log(email.indexOf('@'));
+        // ******
+        // ******
+        // substring method 
+        let b = "Trim the string"
+        b = b.substring(0, 12);
+        console.log(b)
+            // alternative to substring is slice()
+            // b.slice("0, 12")
+
+        // SPLIT(): takes a parameter with which you want to split the string
+        var str = "Hello World"
+        output = str.split(" ")
+        console.table(output)
+
+        str = "Hello World, How are you, hey there";
+        output = str.split(', ')
+        console.table(output);
+
+        // Replace a string
+        output = str.replace('Hello World', 'Hi World');
+        console.log(output)
+
+        // Repeat
+        let greet = "Hello ";
+        console.log(greet.repeat(5))
+    </script>
+</body>
+
+</html>
