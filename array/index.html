@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myArr = [1, 2, 3, 4, 5, 6, 7, 8];
+        // Another means of creating array 👇
+        let month = new Array('January', 'February', 'March');
+        // Check array lenght
+        // month = month.length
+        console.log(month)
+            // Get array lenght 👇
+        console.log(myArr.length);
+        // check if its an array 👇
+        console.log(Array.isArray(myArr));
+
+        // ************************
+        // CHANGING THE VALUE OF AN ARRAY 🎁
+        // ************************
+        const food = ['🍔', '🍟', '🥐'];
+        console.log(food)
+            // Changing the data of food[0]
+        food[0] = "Hambuger"
+
+        //Find the index of an array item
+        console.log(food.indexOf('🥐'))
+
+        // add new item at the end of the array 
+        food.push('new food')
+
+        // add new item at the begining of the array 
+        food.unshift('First Food')
+
+        // Remove an element in the middle
+        food.splice(3, null, 'Third Food')
+        console.log(food)
+    </script>
+</body>
+
+</html>
